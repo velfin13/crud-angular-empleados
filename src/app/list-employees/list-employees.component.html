@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Lista Empleados</h2>
+
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <th>{{employee.name}}</th>
+                <th>{{employee.lastname}}</th>
+                <th>{{employee.email}}</th>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
