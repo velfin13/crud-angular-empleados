@@ -20,4 +20,9 @@ export class EmployeeService {
   registerEmployee(employee: Employee): Observable<Object> {
     return this.httpClient.post(this.baseUrl, employee);
   }
+
+  // registrar empleado
+  deleteEmployee(id: number): Observable<Object> {
+    return this.httpClient.delete(`${this.baseUrl}/${id}`);
+  }
 }
